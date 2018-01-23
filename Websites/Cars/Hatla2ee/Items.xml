@@ -1,0 +1,143 @@
+<websiteInformation>
+	<domain>http://uae.hatla2ee.com</domain>
+	<start_urls>
+		<url>http://uae.hatla2ee.com/en/car/search?</url>
+	</start_urls>
+	<FirstDate>10th Sep 2015</FirstDate>
+	<LastDate>10th Sep 2012</LastDate>
+	<Category>Car</Category>
+	<Action>Sale</Action>
+	<SpiderName>Hatla2eeCarsSpider</SpiderName>
+	<Source>hatla2ee</Source>
+	<LogFile>LogFiles/Car/Sale/Hatla2eeCars.log</LogFile>
+	<DateAttribute>
+		<Name>posting_date</Name>
+		<Place>MasterPage</Place>
+		<DateFunction>YearFirst</DateFunction>
+	</DateAttribute>
+	<MasterPage>
+		<MasterAttributes>
+			<Attribute>
+				<name>link</name>
+				<defaultValue>NA</defaultValue>
+				<xpath>.//a[@class='NewListTitle']/@href</xpath>
+			</Attribute>
+			<Attribute>
+				<name>ad_title</name>
+				<defaultValue>NA</defaultValue>
+				<xpath>.//a[@class='NewListTitle']/text()</xpath>
+			</Attribute>
+			<Attribute>
+				<name>posting_date</name>
+				<xpath>normalize-space(.//span[@class='muted NewListDate']/text())</xpath>
+				<defaultValue>NA</defaultValue>
+			</Attribute>
+		</MasterAttributes>
+		<Containers>
+			<xpath>.//div[@class='CarListWrapper']/div[@class='CarListUnit row-fluid']</xpath>
+		</Containers>
+		<NextPage>
+			<xpath>.//div[@class='pagination pagination-right']/ul/li[last()]/a/@href</xpath>
+			<prefix>http://uae.hatla2ee.com</prefix>
+		</NextPage>
+		<LinkAttribute>
+			<name>link</name>
+			<prefix>http://uae.hatla2ee.com</prefix>
+		</LinkAttribute>
+	</MasterPage>
+	<DetailsAttributes>
+		<Attribute>
+			<name>link</name>
+			<type>Meta</type>
+			<defaultValue>NA</defaultValue>
+		</Attribute>
+		<Attribute>
+			<name>ad_title</name>
+			<type>Meta</type>
+			<defaultValue>NA</defaultValue>
+		</Attribute>
+		<Attribute>
+			<name>posting_date</name>
+			<type>Meta</type>
+			<defaultValue>NA</defaultValue>
+		</Attribute>
+		<Attribute>
+			<name>KM</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Km:']/following-sibling::td[1]/text()</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToInteger</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<name>model</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>normalize-space(.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Model:']/following-sibling::td[1]/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<name>make</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath> normalize-space(.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Make:']/following-sibling::td[1]/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<name>city</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>normalize-space(.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='City:']/following-sibling::td[1]/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<name>colour</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>normalize-space(.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Color:']/following-sibling::td[1]/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<name>used_since</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Used since:']/following-sibling::td[1]/text()</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToInteger</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<name>Transmission</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>normalize-space(.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Transmission:']/following-sibling::td[1]/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<name>Fuel</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>normalize-space(.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Fuel:']/following-sibling::td[1]/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<name>body_style</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>normalize-space(.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Body style:']/following-sibling::td[1]/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<name>telephone</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Phones:']/following-sibling::td[1]/strong/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>price</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//table[@class='table-striped CPTable']/tr/td[normalize-space(.)='Price:']/following-sibling::td[1]/span/text()</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToFloat</action>
+			</actions>
+		</Attribute>
+	</DetailsAttributes>
+</websiteInformation>

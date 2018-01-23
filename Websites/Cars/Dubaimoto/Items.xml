@@ -1,0 +1,147 @@
+<websiteInformation>
+	<domain>dubaimoto.com</domain>
+	<start_urls>
+		<url>http://www.dubaimoto.com/adverts,search,cars,2?sort_by=1&amp;Marka=0&amp;Model=&amp;cena_od=0&amp;cena_do=0&amp;rok_produkcji_od=0&amp;rok_produkcji_do=0&amp;region=0&amp;find=Search</url>
+	</start_urls>
+	<FirstDate>19th Sep 2014</FirstDate>
+	<LastDate>19th Sep 2012</LastDate>
+	<Category>Car</Category>
+	<Action>Sale</Action>
+	<SpiderName>CarsDubaimotoSpider</SpiderName>
+	<Source>dubaimoto</Source>
+	<LogFile>LogFiles/Car/Sale/CarsDubaimoto.log</LogFile>
+	<DateAttribute>
+		<Name>posting_date</Name>
+		<Place>DetailsPage</Place>
+		<DateFunction>Year First</DateFunction>
+	</DateAttribute>
+	<MasterPage>
+		<MasterAttributes>
+			<Attribute>
+				<name>link</name>
+				<defaultValue>NA</defaultValue>
+				<xpath>./td[3]/a/@href</xpath>
+			</Attribute>
+		</MasterAttributes>
+		<Containers>
+			<xpath>.//table[4]/tr[((position() mod 2 ) = 1) and (position() &gt; 4)]</xpath>
+		</Containers>
+		<NextPage>
+			<xpath>.//table[3]/tr[position() = (last() -1)]/td[last()]/a[last()]/@href</xpath>
+			<prefix>http://www.dubaimoto.com/adverts,search,cars,2</prefix>
+		</NextPage>
+		<LinkAttribute>
+			<name>link</name>
+			<prefix>http://www.dubaimoto.com/</prefix>
+		</LinkAttribute>
+	</MasterPage>
+	<DetailsAttributes>
+		<Attribute>
+			<name>link</name>
+			<type>Meta</type>
+			<defaultValue>NA</defaultValue>
+		</Attribute>
+		<Attribute>
+			<name>price</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Price:')]]/td[2]/p/text()</xpath>
+			<actions>
+				<action>extractNumbersFromStringForDubaiMoto</action>
+				<action>changeToInteger</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<name>KM</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Mileage (KM):')]]/td[2]/p/text()</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToInteger</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<name>Year</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//ur[@class='inline-list']/i[@class='icon-table']/following-sibling::p[1]/text()</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToInteger</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<name>type</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Type:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>Fuel</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Fuel type:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>Engine_Capity</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Engine capity:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>power</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Power:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>Color</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Colour:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>Doors</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Number of Doors:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>posting_date</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Date of entry:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>item_D</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'item ID:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>Description</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Description:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>extras</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Extras:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>remarks</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Remarks:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<name>telephone</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>.//tr[td[1]/p[contains(., 'Tel:')]]/td[2]/p/text()</xpath>
+		</Attribute>
+	</DetailsAttributes>
+</websiteInformation>

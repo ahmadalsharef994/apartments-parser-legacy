@@ -1,0 +1,5 @@
+{
+  "villa":["villa","villas","villa/house"],
+  "apartment":["apartment","house","apartments","apartment/flat"],
+  "townhouse":["townhouse","townhouses"]
+}

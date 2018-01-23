@@ -1,0 +1,34 @@
+<mapping>
+    <master>
+			<key>villa</key>
+        <synonyms>villa</synonyms>
+        <synonyms>villas</synonyms>
+        <synonyms>villa/house</synonyms>
+    </master>
+    <master>
+        <key>apartment</key>
+        <synonyms>apartment</synonyms>
+        <synonyms>house</synonyms>
+        <synonyms>apartments</synonyms>
+		<synonyms>apartment/flat</synonyms>
+    </master>
+    <master>
+        <key>townhouse</key>
+        <synonyms>townhouse</synonyms>
+        <synonyms>townhouses</synonyms>
+    </master>
+    <master>
+        <key>hotel apartment</key>
+        <synonyms>hotel apartment</synonyms>
+        <synonyms>hotel</synonyms>
+        <synonyms>hotel apartments</synonyms>
+    </master>
+    <master>
+        <key>pent house</key>
+        <synonyms>pent house</synonyms>
+    </master>
+    <master>
+        <key>commercial</key>
+        <synonyms>commercial</synonyms>
+    </master>
+</mapping>

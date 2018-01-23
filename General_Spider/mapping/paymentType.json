@@ -1,0 +1,7 @@
+{
+    "yearly": ["annual","long term","bi-yearly","year","yearly"],
+    "monthly": ["monthly", "month"],
+    "weekly": ["weekly", "week"],
+	"daily": ["daily","day"],
+	"quarterly":["quarterly"]
+}

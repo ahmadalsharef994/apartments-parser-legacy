@@ -1,0 +1,5 @@
+{
+    "furnished": ["furnished","fully furnished","yes"],
+    "unfurnished": ["unfurnished", "not furnished", "no"],
+    "partly furnished": ["partly furnished", "partially  furnished"]
+}

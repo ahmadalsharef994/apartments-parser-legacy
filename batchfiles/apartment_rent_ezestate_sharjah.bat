@@ -1,0 +1,2 @@
+cd C:\ScrapyProjects\General_Spider_code_version_9_scrapy1_0_phonetic_testing\General_Spider_code_version_9_scrapy1_0_phonetic_testing
+apartment_rent_ezestate_sharjah.py

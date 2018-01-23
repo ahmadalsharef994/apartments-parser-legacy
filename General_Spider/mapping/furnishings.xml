@@ -1,0 +1,19 @@
+<mapping>
+    <master>
+			<key>furnished</key>
+        <synonyms>furnished</synonyms>
+        <synonyms>fully furnished</synonyms>
+        <synonyms>yes</synonyms>
+    </master>
+    <master>
+        <key>unfurnished</key>
+        <synonyms>unfurnished</synonyms>
+        <synonyms>not furnished</synonyms>
+        <synonyms>no</synonyms>
+    </master>
+    <master>
+        <key>partly furnished</key>
+        <synonyms>partly furnished</synonyms>
+        <synonyms>partially  furnished</synonyms>
+    </master>
+</mapping>

@@ -1,0 +1,7 @@
+{
+    "villa": ["villa","villas","villa/house"],
+    "apartment": ["apartment", "house","apartments","apartment/flat"],
+    "townhouse": ["townhouse", "townhouses"],
+	"hotel apartment": ["hotel apartment","hotel","hotel apartment"],
+	"quarterly":["quarterly"]
+}

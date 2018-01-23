@@ -1,0 +1,34 @@
+<mapping>
+    <master>
+        <key>yearly</key>
+        <valueToMultiply>1</valueToMultiply>
+        <synonyms>annual</synonyms>
+        <synonyms>long term</synonyms>
+        <synonyms>bi-yearly</synonyms>
+        <synonyms>year</synonyms>
+        <synonyms>yearly</synonyms>
+    </master>
+    <master>
+        <key>monthly</key>
+        <valueToMultiply>12</valueToMultiply>
+        <synonyms>monthly</synonyms>
+        <synonyms>month</synonyms>
+    </master>
+    <master>
+        <key>weekly</key>
+        <valueToMultiply>52</valueToMultiply>
+        <synonyms>weekly</synonyms>
+        <synonyms>week</synonyms>
+    </master>
+    <master>
+        <key>daily</key>
+        <valueToMultiply>365</valueToMultiply>
+        <synonyms>daily</synonyms>
+        <synonyms>day</synonyms>
+    </master>
+    <master>
+        <key>quarterly</key>
+        <valueToMultiply>4</valueToMultiply>
+        <synonyms>quarterly</synonyms>
+    </master>
+</mapping>

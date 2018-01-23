@@ -1,0 +1,183 @@
+<websiteInformation>
+	<ActionsFile>ApartmentsForRent\PropertyOnline\Actions.xml</ActionsFile>
+	<domain>propertyonline.ae</domain>
+	<start_urls>
+        <url>http://propertyonline.ae/property/search?listing_category=Residential&amp;listing_sub_category=Buy&amp;page_size=10&amp;order_by=descending&amp;sort_by=latest&amp;display_type=list&amp;listing_type=&amp;bedroom=&amp;sq_ft=&amp;price=</url>
+	</start_urls>
+	<FirstDate>25th Aug 2015</FirstDate>
+	<LastDate>25th Aug 2012</LastDate>
+	<Category>Apartment</Category>
+	<Action>sale</Action>
+	<SpiderName>apartments_sale_propertyonline</SpiderName>
+	<Source>PropertyOnline</Source>
+	<TemplateAttributes>Websites/Templates/ApartmentsRent.xml</TemplateAttributes>
+	<LogFile>LogFiles/Apartment/Sale/apartments_sale_propertyonline.log</LogFile>
+	<DateAttribute>
+		<Place>No Place</Place>
+		<Name>posting_date</Name>
+	</DateAttribute>
+	<MasterPage>
+		<MasterAttributes>
+			<Attribute>
+				<defaultValue>NA</defaultValue>
+				<name>ad_link</name>
+				<xpath>./div[@class='detail_top_bar']/div[@class='reference_no']/span/a/@href</xpath>
+			</Attribute>
+		</MasterAttributes>
+		<Containers>
+				<xpath>.//div[@class='properties-rows']/div[@class='row']/div[contains(concat(' ',@class,' '), ' property ') and contains(concat(' ',@class,' '), ' span9 ')]</xpath>
+		</Containers>
+		<NextPage>
+			<xpath>.//div[@class='pagination']/ul/li[position() = (last()-1)]/a/@href</xpath>
+            <suffix>?listing_category=Residential&amp;listing_sub_category=Buy&amp;page_size=10&amp;order_by=descending&amp;sort_by=recently_updated&amp;display_type=list&amp;listing_type=&amp;bedroom=&amp;sq_ft=&amp;price=</suffix>
+		</NextPage>
+		<LinkAttribute>
+			<name>ad_link</name>
+		</LinkAttribute>
+	</MasterPage>
+	<DetailsAttributes>
+		<Attribute>
+			<name>ad_link</name>
+			<defaultValue>NA</defaultValue>
+			<type>Meta</type>
+		</Attribute>
+		<Attribute>
+			<defaultValue>NA</defaultValue>
+			<name>property_reference</name>
+			<type>Selector</type>
+			<xpath>normalize-space(.//div[@class='detail_top_bar']/div[@class='reference_no']/span/text())</xpath>
+		</Attribute>
+		<Attribute>
+			<defaultValue>-1</defaultValue>
+			<name>price</name>
+			<type>Selector</type>
+			<xpath>normalize-space(.//div[@class='detail_top_bar']/div[@class='price']/span/text())</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToFloat</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<defaultValue>-1</defaultValue>
+			<name>size</name>
+			<type>Selector</type>
+			<xpath>normalize-space(.//div[@class='detail_top_bar']/div[@class='sq_ft']/span/text())</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToFloat</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<defaultValue>-1</defaultValue>
+			<name>bathrooms</name>
+			<type>Selector</type>
+			<xpath>normalize-space(.//div[@class='detail_top_bar']/div[@class='bathrooms']/div/text())</xpath>
+			<actions>
+				<action>changeToInteger</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<defaultValue>-1</defaultValue>
+			<name>bedrooms</name>
+			<type>Selector</type>
+			<xpath>normalize-space(.//div[@class='detail_top_bar']/div[@class='bedrooms']/div/text())</xpath>
+			<actions>
+				<action>changeToInteger</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<defaultValue>-1</defaultValue>
+			<name>price_sqft</name>
+			<type>Selector</type>
+			<xpath>normalize-space(.//div[@class='pull-left overview']//table//tr/td[normalize-space(text())='Price/Sq ft']/following-sibling::td[1]/text())</xpath>
+			<actions>
+				<action>extractNumbersFromString</action>
+				<action>changeToFloat</action>
+			</actions>
+		</Attribute>
+		<Attribute>
+			<defaultValue>NA</defaultValue>
+			<name>type</name>
+			<type>Selector</type>
+			<xpath>normalize-space(.//div[@class='pull-left overview']//table//tr/td[normalize-space(text())='Type']/following-sibling::td[1]/text())</xpath>
+			 <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+		</Attribute>
+		<Attribute>
+			<defaultValue>NA</defaultValue>
+			<name>trade_name</name>
+			<type>Selector</type>
+			<xpath>.//div[@class='agent clearfix marB5']/div[@class='name']/h5/a/text()</xpath>
+		</Attribute>
+		<Attribute>
+			<defaultValue>NA</defaultValue>
+			<name>phone</name>
+			<type>Selector</type>
+			<xpath>.//div[@class='agent clearfix marB5']/div[@class='phone']/a/@data-value</xpath>
+		</Attribute>
+		<Attribute>
+			<defaultValue>NA</defaultValue>
+			<name>ad_images</name>
+			<type>Multiple</type>
+			<xpath>.//div[@id='property_overview']/ul/li/img/@src</xpath>
+		</Attribute>
+        <Attribute>
+			<name>description</name>
+			<defaultValue>NA</defaultValue>
+			<type>Selector</type>
+			<xpath>normalize-space(string(.//div[@class='listing_description']))</xpath>
+		</Attribute>
+		<Attribute>
+			<name>country</name>
+			<defaultValue>UAE</defaultValue>
+			<type>Selector</type>
+			<xpath>This website does not have value for the country. Bashar suggested to use the default value as UAE always</xpath>
+             <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+		</Attribute>
+        <Attribute>
+                <name>city</name>
+                <type>Selector</type>
+                <defaultValue>NA</defaultValue>
+                <xpath>normalize-space(.//div[@class='pull-left overview']//table//tr/td[normalize-space(text())='Location']/following-sibling::td[1]/text())</xpath>
+                <actions>
+                    <action>propertyOnlineGetCityFromLocation</action>
+                    <action>cleanCity</action>
+                </actions>
+        </Attribute>
+        <Attribute>
+            <name>area</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>normalize-space(.//div[@class='pull-left overview']//table//tr/td[normalize-space(text())='Location']/following-sibling::td[1]/text())</xpath>
+            <actions>
+                <action>propertyOnlineGetAreaFromLocation</action>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>building</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>normalize-space(.//div[@class='pull-left overview']//table//tr/td[normalize-space(text())='Location']/following-sibling::td[1]/text())</xpath>
+            <actions>
+                <action>propertyOnlineGetBuildingFromLocation</action>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>longitude</name>
+            <defaultValue>NA</defaultValue>
+            <type>Selector</type>
+            <xpath>this website does not have so we will use the default value and then there is a pipeline that trys to find a value using either google map or the master data</xpath>
+        </Attribute>
+        <Attribute>
+            <name>latitude</name>
+            <defaultValue>NA</defaultValue>
+            <type>Selector</type>
+            <xpath>this website does not have so we will use the default value and then there is a pipeline that trys to find a value using either google map or the master data</xpath>
+        </Attribute>
+	</DetailsAttributes>
+</websiteInformation>
