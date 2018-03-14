@@ -238,3 +238,42 @@ class Actions():
         updateDate = value.split(',')
         result = re.search('updated \s*(.*)', value).group(1)
         return result
+
+    @staticmethod
+    def extractBayutCity(value):
+        city = value.split(',')[-1]
+        return city
+
+    @staticmethod
+    def extractBayutArea(value):
+        area = value.split(',')[-2]
+        return area
+
+    @staticmethod
+    def extractBayutBuilding(value):
+        if len(value.split(','))>2:
+            building = value.split(',')[0]
+            return building
+        else:
+            return "na"
+
+
+
+    @staticmethod
+    def extractBayutLatitude(value):
+        lat = value.split('latitude')[1].split('longitude')[0]
+        return re.search('(\d+(?:[.]\d*)*)', lat).group(1)
+
+    @staticmethod
+    def extractBayutLongitude(value):
+        long = value.split('longitude')[1].split('reference_id')[0]
+        return re.search('(\d+(?:[.]\d*)*)', long).group(1)
+
+
+    @staticmethod
+    def exctractDubizzleDate(value):
+        try:
+            value = re.search('Posted on: \s*(.*)', value).group(1)
+            return value
+        except:
+            return str(datetime.today().strftime("%d %b %Y"))
