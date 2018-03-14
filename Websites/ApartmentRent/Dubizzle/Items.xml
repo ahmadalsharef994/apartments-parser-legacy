@@ -1,7 +1,7 @@
 <websiteInformation>
 	<domain>dubizzle.com</domain>
 	<start_urls>
-		<url>https://uae.dubizzle.com/en/property-for-rent/residential/apartmentflat/</url>
+		<url>https://uae.dubizzle.com/en/property-for-rent/residential/</url>
 	</start_urls>
 	<FirstDate>25th Aug 2018</FirstDate>
 	<LastDate>28th May 2016</LastDate>
@@ -13,28 +13,23 @@
 	<TemplateAttributes>Websites/Templates/ApartmentsRent.xml</TemplateAttributes>
 	<DateAttribute>
 		<Name>posting_date</Name>
-		<Place>MasterPage</Place>
+		<Place>DetailsPage</Place>
 		<DateFunction>DayFirst</DateFunction>
+		<action>exctractDubizzleDate</action>
 	</DateAttribute>
 	<MasterPage>
 		<MasterAttributes>
 			<Attribute>
 				<defaultValue>NA</defaultValue>
 				<name>ad_link</name>
-				<xpath>normalize-space(.//span[@class='title']/a/@href)</xpath>
-			</Attribute>
-			<Attribute>
-				<defaultValue>NA</defaultValue>
-				<name>posting_date</name>
-				<xpath>normalize-space(.//p[@class='date']/text())</xpath>
+				<xpath>normalize-space(@href)</xpath>
 			</Attribute>
 		</MasterAttributes>
 		<Containers>
-			<xpath>.//div[@class='list-listings']</xpath>
+			<xpath>.//div[@class='list-listings']/a[@class='listing-link ']</xpath>
 		</Containers>
 		<NextPage>
-			<xpath>string(.//div[@class='pages-list']/div[@class='page selected']/following-sibling/div/text())</xpath>
-			<prefix>https://uae.dubizzle.com/en/property-for-rent/residential/apartmentflat/?page=</prefix>
+			<xpath>.//div[@class='pagination']/a[last()]/@href</xpath>
 		</NextPage>
 		<LinkAttribute>
 			<name>ad_link</name>
@@ -48,9 +43,10 @@
 			<type>Meta</type>
 		</Attribute>
 		<Attribute>
-			<defaultValue>NA</defaultValue>
-			<name>posting_date</name>
-			<type>Meta</type>
+				<defaultValue>NA</defaultValue>
+				<name>posting_date</name>
+				<type>Selector</type>
+				<xpath>normalize-space(.//div[@class='posted-on fnt-12-grey']/text())</xpath>
 		</Attribute>
 		<Attribute>
 			<defaultValue>NA</defaultValue>
@@ -126,12 +122,9 @@
 		</Attribute>
 		<Attribute>
 			<name>amenities</name>
-			<type>Multiple</type>
 			<defaultValue>NA</defaultValue>
-			<xpath>.//li[@class='amenities-list-element']/div/div[2]/text()</xpath>
-			<actions>
-				<action>convertListToString</action>
-			</actions>
+			<type>Selector</type>
+			<xpath>normalize-space(string(.//ul[@class='amenities-list mrgn-left-40']))</xpath>
 		</Attribute>
 		<Attribute>
 			<name>payment_type</name>
@@ -171,7 +164,7 @@
 			<name>trade_name</name>
 			<type>Selector</type>
 			<defaultValue>NA</defaultValue>
-			<xpath>normalize-space(.//span[@class='lister-name']/a/text())</xpath>
+			<xpath>normalize-space(.//span[@class='lister-name']/a/span/text())</xpath>
 		</Attribute>
 		<Attribute>
 			<name>rera_registration_number</name>
@@ -223,16 +216,6 @@
             <actions>
                 <action>dubizzleExtractType</action>
 				<action>changeToSmallLetters</action>
-            </actions>
-        </Attribute>
-        <Attribute>
-            <name>buildingAndArea</name>
-            <comment>This attribute is to be use in a pipeline for Dubbizle to handle the missing of the building attribute</comment>
-            <type>Selector</type>
-            <xpath>normalize-space(string(.//div[@class='location-areas']))</xpath>
-            <defaultValue>NA</defaultValue>
-			<actions>
-                <action>changeToSmallLetters</action>
             </actions>
         </Attribute>
 	</DetailsAttributes>

@@ -1,0 +1,204 @@
+<websiteInformation>
+    <domain>www.bayut.com</domain>
+    <start_urls>
+        <url>https://www.bayut.com/for-sale/property/uae/?sort=date_desc</url>
+    </start_urls>
+    <FirstDate>25th Apr 2020</FirstDate>
+    <LastDate>28th May 2016</LastDate>
+    <Category>Apartment</Category>
+    <Action>sale</Action>
+    <SpiderName>apartments_sale_bayut</SpiderName>
+    <Source>bayut</Source>
+    <TemplateAttributes>Websites/Templates/ApartmentsSale.xml</TemplateAttributes>
+    <LogFile>LogFiles/Apartment/Sale/apartments_sale_bayut.log</LogFile>
+    <DateAttribute>
+        <Place>No Place</Place>
+        <Name>posting_date</Name>
+    </DateAttribute>
+    <MasterPage>
+        <MasterAttributes>
+            <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_link</name>
+                <xpath>.//li[@role='article']/article/div/a/@href</xpath>
+            </Attribute>
+            <Attribute>
+                <name>ad_title</name>
+                <type>Selector</type>
+                <xpath>.//li[@role='article']/article/div/a/@title</xpath>
+                <defaultValue>NA</defaultValue>
+            </Attribute>
+        </MasterAttributes>
+        <Containers>
+            <xpath>.//ul[@class='ebed854c']</xpath>
+        </Containers>
+        <NextPage>
+            <xpath>.//div[@role='Navigation']/ul/li[last()]/a/@href</xpath>
+            <prefix>https://www.bayut.com</prefix>
+        </NextPage>
+        <LinkAttribute>
+            <name>ad_link</name>
+            <prefix>https://www.bayut.com</prefix>
+        </LinkAttribute>
+    </MasterPage>
+    <DetailsAttributes>
+        <Attribute>
+            <name>ad_title</name>
+            <defaultValue>NA</defaultValue>
+            <type>Meta</type>
+        </Attribute>
+        <Attribute>
+            <name>ad_link</name>
+            <type>Meta</type>
+            <defaultValue>NA</defaultValue>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>property_reference</name>
+            <type>Selector</type>
+            <xpath>normalize-space(.//div[@class='_1f628204']/div/div/span/text())</xpath>
+        </Attribute>
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>price</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail price']/span[@aria-label='Value']))</xpath>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToFloat</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>size</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail area']/span[@aria-label='Value']/span))</xpath>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToFloat</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bathrooms</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail baths']/span[@aria-label='Value']))</xpath>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bedrooms</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail beds']/span[@aria-label='Value']))</xpath>
+            <actions>
+                <action>checkIfStudioBedroom</action>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>price_sqft</name>
+            <type>Selector</type>
+            <xpath>no xpath</xpath>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>type</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail type']/span[@aria-label='Value']))</xpath>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>trade_name</name>
+            <type>Selector</type>
+            <xpath>normalize-space(.//div[@aria-label='Agency info']/div/div/span/text())</xpath>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>phone</name>
+            <type>Selector</type>
+            <xpath>no xpath</xpath>
+        </Attribute>
+        <Attribute>
+            <name>country</name>
+            <defaultValue>UAE</defaultValue>
+            <type>Selector</type>
+            <xpath>This website does not have value for the country. Bashar suggested to use the default value as UAE always</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>city</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail location']/span[@aria-label='Value']))</xpath>
+            <actions>
+                <action>extractBayutCity</action>
+                <action>cleanCity</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>area</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail location']/span[@aria-label='Value']))</xpath>
+            <actions>
+                <action>extractBayutArea</action>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>building</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail location']/span[@aria-label='Value']))</xpath>
+            <actions>
+                <action>extractBayutBuilding</action>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>payment_type</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>.//div[@aria-label='Property stats container']/div/span[@aria-label='Property compact frequency']/text()</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>ad_images</name>
+            <type>Multiple</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>.//div[@class='image-gallery-slide']/picture/img/@src</xpath>
+        </Attribute>
+        <Attribute>
+            <name>longitude</name>
+            <defaultValue>NA</defaultValue>
+            <type>Selector</type>
+            <xpath>.//meta[@itemprop='image']/following-sibling::script/text()</xpath>
+            <actions>
+                <action>extractBayutLongitude</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>latitude</name>
+            <defaultValue>NA</defaultValue>
+            <type>Selector</type>
+            <xpath>.//meta[@itemprop='image']/following-sibling::script/text()</xpath>
+            <actions>
+                <action>extractBayutLatitude</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+			<name>description</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>normalize-space(string(.//div[@aria-label='Property description']))</xpath>
+		</Attribute>
+    </DetailsAttributes>
+</websiteInformation>
