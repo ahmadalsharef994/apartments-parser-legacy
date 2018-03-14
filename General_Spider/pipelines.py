@@ -80,35 +80,8 @@ class Yzerproperty(object):
 class DubizzlePipeline(object):
     def process_item(self, item, spider):
         if item['source'] == "dubizzle":
-            defaultValue = ""
-            exceptionValue = "NA"
-            building = item['building']
-            building = building.strip()
-            building = building.lower()
-            try:
-                if building == defaultValue or building == exceptionValue.lower():
-                    buildingAndArea = item['buildingAndArea']
-                    firstValue = buildingAndArea.split(',')[0]
-                    secondValue = buildingAndArea.split(',')[1]
-                    firstValue = ''.join([i if ord(i) < 128 else '' for i in firstValue])
-                    secondValue = ''.join([i if ord(i) < 128 else '' for i in secondValue])
-                    firstValue = firstValue.lower()
-                    firstValue = firstValue.strip()
-                    secondValue = secondValue.lower()
-                    secondValue = secondValue.strip()
-                    city = item['city']
-                    city = city.lower()
-                    city = city.strip()
-                    if firstValue != city:  # case of area and buiilding state name , uae
-                        if secondValue == city:
-                            item['area'] = firstValue
-                        else:
-                            item['building'] = firstValue
-                            item['area'] = secondValue
-            except Exception as ee:
-                errorMessage2 = "Error on {0}".format(str(ee))
-                print errorMessage2
-            # my_dict.pop('buildingAndArea', None)
+            item['longitude'],item['latitude'] = item['latitude'],item['longitude']
+            return item
         return item
 
 class AddCombinedField(object):

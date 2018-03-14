@@ -13,10 +13,10 @@ ITEM_PIPELINES = {
     'General_Spider.pipelines.ActionsPipeline' : 700,
     'General_Spider.pipelines.Yzerproperty' : 690,
     #'General_Spider.pipelines.CordinatesPipeline' : 710,
-    #'General_Spider.pipelines.DubizzlePipeline': 701,
+    'General_Spider.pipelines.DubizzlePipeline': 701,
     'General_Spider.MasterDataPipeline.MasterDataPipeline' : 901,
     'General_Spider.pipelines.DataNormalisation': 702,
-    'General_Spider.pipelines.AddCombinedField': 703,
+    # 'General_Spider.pipelines.AddCombinedField': 703,
 }
 DOWNLOADER_MIDDLEWARES = {
     'General_Spider.middlewares.CustomProxyMiddleware':199,
