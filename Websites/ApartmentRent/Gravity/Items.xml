@@ -1,146 +1,113 @@
 <websiteInformation>
-	<domain>justproperty.com</domain>
+	<domain>gravity.com</domain>
 	<start_urls>
-		<url>https://www.justproperty.com/en/rent/uae/properties-for-rent/?sort=pub_date__desc&amp;map=true</url>
+		<url>http://www.gravity-re.com/rent?sf_select_property_type=res&amp;sf_select_listing=10&amp;community=6142&amp;sub_community=-1&amp;property=-1&amp;min_price=0&amp;max_price=-1&amp;min_sqft=0&amp;max_sqft=-1&amp;min_bedrooms=-1&amp;max_bedrooms=-1&amp;min_bathrooms=0&amp;max_bathrooms=-1&amp;orderby=4&amp;limit=10#</url>
 	</start_urls>
 	<FirstDate>25th Aug 2017</FirstDate>
 	<LastDate>28th May 2016</LastDate>
 	<Category>apartment</Category>
 	<Action>rent</Action>
-	<SpiderName>apartment_rent_justproperty</SpiderName>
-	<Source>justproperty</Source>
-	<LogFile>LogFiles/Apartment/Rent/apartments_rent_justproperty_log.txt</LogFile>
+	<SpiderName>apartment_rent_gravity</SpiderName>
+	<Source>gravity</Source>
+	<LogFile>LogFiles/Apartment/Rent/apartments_rent_gravity_log.txt</LogFile>
 	<TemplateAttributes>Websites/Templates/ApartmentsRent.xml</TemplateAttributes>
 	<DateAttribute>
 		<Name>posting_date</Name>
-        <Place>DetailsPage</Place>
+        <Place>No Place</Place>
         <DateFunction>DayFirst</DateFunction>
 	</DateAttribute>
 	<MasterPage>
         <MasterAttributes>
             <Attribute>
+            <name>posting_date</name>
+            <defaultValue>-1</defaultValue>
+            <type>Selector</type>
+            <xpath>no xpath</xpath>
+        </Attribute>
+            <Attribute>
                 <defaultValue>NA</defaultValue>
                 <name>ad_title</name>
-                <xpath>normalize-space(.//h2[contains(@class, 'item-title')]/text())</xpath>
+                <xpath>normalize-space(.//h3//a/text())</xpath>
             </Attribute>
             <Attribute>
                 <defaultValue>NA</defaultValue>
                 <name>ad_link</name>
-                <xpath>normalize-space(.//a[@class='item-title-link']/@href)</xpath>
+                <xpath>normalize-space(.//h3//a/@href)</xpath>
             </Attribute>
-        </MasterAttributes>
-        <Containers>
-            <xpath>.//div[@class='suggested-search-results']/div[@class='item-result']|.//div[@class='search-results']/div[@class='item-result']</xpath>
-        </Containers>
-        <NextPage>
-            <xpath>string(.//div[@class='pagination']//a[last()]/@href)</xpath>
-             <prefix>http://www.justproperty.com</prefix>
-        </NextPage>
-        <LinkAttribute>
-            <name>ad_link</name>
-            <prefix>http://www.justproperty.com</prefix>
-        </LinkAttribute>
-    </MasterPage>
-    <DetailsAttributes>
-        <Attribute>
-            <name>ad_title</name>
-            <type>Meta</type>
-            <defaultValue>NA</defaultValue>
-        </Attribute>
-        <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>ad_link</name>
-            <type>Meta</type>
-        </Attribute>
-        <Attribute>
+			<Attribute>
             <defaultValue>NA</defaultValue>
             <name>property_reference</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Reference No:']/following-sibling::text())</xpath>
+            <xpath>normalize-space(.//span[@class='pull-right ref_id_ls'])</xpath>
         </Attribute>
-        <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>type</name>
-            <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Type:']/following-sibling::text())</xpath>
-            <actions>
-                <action>changeToSmallLetters</action>
-            </actions>
-        </Attribute>
-         <Attribute>
+		  <Attribute>
             <defaultValue>-1</defaultValue>
             <name>bedrooms</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Bedrooms:']/following-sibling::text())</xpath>
-            <actions>
-                    <action>checkIfStudioBedroom</action>
-                    <action>changeToInteger</action>
-            </actions>
-        </Attribute>
-         <Attribute>
-            <defaultValue>-1</defaultValue>
-            <name>size</name>
-            <type>Selector</type>
-           <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Floor Area:']/following-sibling::text())</xpath>
-            <actions>
+            <xpath>normalize-space(//i[@class='fa fa-bed'])</xpath>
+          <actions>
                 <action>extractNumbersFromString</action>
                 <action>changeToFloat</action>
             </actions>
         </Attribute>
-        <Attribute>
+
+		<Attribute>
             <defaultValue>-1</defaultValue>
             <name>price</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Price:']/following-sibling::text())</xpath>
+            <xpath>normalize-space(.//div[@class='pi-price pull-left price'])</xpath>
             <actions>
                 <action>extractNumbersFromString</action>
                 <action>changeToFloat</action>
             </actions>
         </Attribute>
-        <Attribute>
-			<name>price_sqft</name>
-			<defaultValue>-1</defaultValue>
-			<type>Selector</type>
-			<xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = ' Price/sq. ft.: ']/following-sibling::text())</xpath>
-			<actions>
-				<action>extractNumbersFromString</action>
-				<action>changeToFloat</action>
-			</actions>
-		</Attribute>
-         <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>payment_type</name>
-            <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) ='Rental Term:']/following-sibling::text())</xpath>
-             <actions>
-                 <action>justPropertyPaymentType</action>
-                 <action>changeToSmallLetters</action>
-            </actions>
-        </Attribute>
-        <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>furnished</name>
-            <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Furnishings:']/following-sibling::text())</xpath>
-            <actions>
-                <action>changeToSmallLetters</action>
-            </actions>
-        </Attribute>
-        <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>posting_date</name>
-            <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Last Updated:']/following-sibling::text())</xpath>
-        </Attribute>
-        <Attribute>
+		<Attribute>
             <defaultValue>-1</defaultValue>
             <name>bathrooms</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='details-amenities']//li[@class='amenity']/label[normalize-space(.) = 'Baths:']/following-sibling::text())</xpath>
+            <xpath>normalize-space(.//i[@class='fa fa-bathroom'])</xpath>
             <actions>
                 <action>changeToInteger</action>
             </actions>
         </Attribute>
+        </MasterAttributes>
+        <Containers>
+			<xpath>.//div[@class='product-item product_list list_item']</xpath>
+		</Containers>
+
+        <LinkAttribute>
+            <name>ad_link</name>
+        </LinkAttribute>
+        <NextPage>
+            <xpath>string(.//ul[@class='pagination pull-right']//li[@class='next']/a/@href)</xpath>
+        </NextPage>
+    </MasterPage>
+    <DetailsAttributes>
+
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>size</name>
+            <type>Selector</type>
+            <xpath>string(.//*[text()[contains(.,'Built up area')]]/following-sibling::label)</xpath>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToFloat</action>
+            </actions>
+        </Attribute>
+
+
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>type</name>
+            <type>Selector</type>
+            <xpath>string(.//*[text()[contains(.,'Property Type')]]/following-sibling::label)</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+
+
+
         <Attribute>
             <defaultValue>UAE</defaultValue>
             <name>country</name>
@@ -154,7 +121,7 @@
             <defaultValue>NA</defaultValue>
             <name>city</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='breadcrumb']/li[1]/a/span/text())</xpath>
+            <xpath>string(.//*[text()[contains(.,'City')]]/following-sibling::label)</xpath>
             <actions>
                 <action>cleanCity</action>
             </actions>
@@ -163,7 +130,7 @@
             <defaultValue>NA</defaultValue>
             <name>area</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='breadcrumb']/li[2]/a/span/text())</xpath>
+            <xpath>string(.//*[text()[contains(.,'Community')]]/following-sibling::label)</xpath>
             <actions>
                 <action>changeToSmallLetters</action>
             </actions>
@@ -172,7 +139,7 @@
             <defaultValue>NA</defaultValue>
             <name>building</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//ul[@class='breadcrumb']/li[3]/a/span/text())</xpath>
+            <xpath>string(.//*[text()='Property']/following-sibling::label)</xpath>
             <actions>
                 <action>changeToSmallLetters</action>
             </actions>
@@ -181,7 +148,7 @@
             <defaultValue>NA</defaultValue>
             <name>subarea</name>
             <type>Selector</type>
-            <xpath>It does not exist so pleas use the defaut value</xpath>
+            <xpath>string(.//*[text()[contains(.,'Sub Community')]]/following-sibling::label)</xpath>
             <actions>
                 <action>changeToSmallLetters</action>
             </actions>
@@ -190,43 +157,33 @@
             <defaultValue>NA</defaultValue>
             <name>amenities</name>
             <type>Selector</type>
-            <xpath>normalize-space(string(.//ul[@class='amenities']))</xpath>
+            <xpath>normalize-space(string(.//p[@itemprop='description']))</xpath>
         </Attribute>
         <Attribute>
             <defaultValue>NA</defaultValue>
             <name>longitude</name>
             <type>Selector</type>
-            <xpath>.//div[@id='property-map']/@data-lon</xpath>
+            <xpath>.//input[@name='longitude']/@value</xpath>
         </Attribute>
         <Attribute>
             <defaultValue>NA</defaultValue>
             <name>latitude</name>
             <type>Selector</type>
-            <xpath>.//div[@id='property-map']/@data-lat</xpath>
+            <xpath>.//input[@name='latitude']/@value</xpath>
         </Attribute>
         <Attribute>
             <defaultValue>NA</defaultValue>
             <name>description</name>
             <type>Selector</type>
-            <xpath>string(.//div[@class='content details-description'])</xpath>
+            <xpath>string(.//p[@itemprop='description'])</xpath>
         </Attribute>
-        <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>trade_name</name>
-            <type>Selector</type>
-            <xpath>normalize-space(.//h3[normalize-space(.) = 'Real Estate Agency Details']/following-sibling::p/text())</xpath>
-        </Attribute>
+
         <Attribute>
             <name>ad_images</name>
             <defaultValue>NA</defaultValue>
             <type>Multiple</type>
-            <xpath>.//div[@class='gallery-image-pager']/img/@data-src</xpath>
+            <xpath>.//div[@class='product-other-images']//@src</xpath>
         </Attribute>
-        <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>phone</name>
-            <type>Selector</type>
-            <xpath>.//button[@data-role='call']/@data-phone</xpath>
-        </Attribute>
+
     </DetailsAttributes>
 </websiteInformation>
