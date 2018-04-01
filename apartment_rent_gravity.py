@@ -8,8 +8,8 @@ from scrapy.settings import Settings
 def setup_crawler(domain):
     spider = GeneralSpider(attributesXMLFilePath=domain)
     settings = get_project_settings()
-    Settings.set(settings, 'JOBDIR', "SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty")
-    Settings.set(settings, 'LOG_FILE', "LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log")
+    Settings.set(settings, 'JOBDIR', "SeenFolders/Apartment/Rent/seen_apartment_rent_gravity")
+    Settings.set(settings, 'LOG_FILE', "LogFiles/Apartment/Rent/apartments_sale_gravity.log")
     Settings.set(settings, 'LOG_ENABLED', "TRUE")
     Settings.set(settings, 'LOG_LEVEL', "INFO")
     crawler = Crawler(spidercls = GeneralSpider ,settings = settings)
@@ -19,6 +19,6 @@ def setup_crawler(domain):
     #crawler.start()
 
 
-setup_crawler('Websites//ApartmentSale//Yzerproperty//Items.xml')
+setup_crawler('Websites//ApartmentRent//Gravity//Items.xml')
 #log.start()
 reactor.run()

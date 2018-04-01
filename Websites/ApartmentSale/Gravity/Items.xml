@@ -7,14 +7,13 @@
 	<LastDate>28th May 2016</LastDate>
 	<Category>apartment</Category>
 	<Action>sale</Action>
-	<SpiderName>apartment_rent_gravity</SpiderName>
+	<SpiderName>apartment_sale_gravity</SpiderName>
 	<Source>gravity</Source>
-	<LogFile>LogFiles/Apartment/Rent/apartments_rent_gravity_log.txt</LogFile>
-	<TemplateAttributes>Websites/Templates/ApartmentsRent.xml</TemplateAttributes>
+	<LogFile>LogFiles/Apartment/Sale/apartments_sale_gravity_log.txt</LogFile>
+	<TemplateAttributes>Websites/Templates/ApartmentsSale.xml</TemplateAttributes>
 	<DateAttribute>
 		<Name>posting_date</Name>
         <Place>No Place</Place>
-        <DateFunction>DayFirst</DateFunction>
 	</DateAttribute>
 	<MasterPage>
         <MasterAttributes>
@@ -45,29 +44,18 @@
             <name>bedrooms</name>
             <type>Selector</type>
             <xpath>normalize-space(//i[@class='fa fa-bed'])</xpath>
-          <actions>
-                <action>extractNumbersFromString</action>
-                <action>changeToFloat</action>
-            </actions>
         </Attribute>
 		<Attribute>
             <defaultValue>-1</defaultValue>
             <name>price</name>
             <type>Selector</type>
             <xpath>normalize-space(.//div[@class='pi-price pull-left price'])</xpath>
-            <actions>
-                <action>extractNumbersFromString</action>
-                <action>changeToFloat</action>
-            </actions>
         </Attribute>
 		<Attribute>
             <defaultValue>-1</defaultValue>
             <name>bathrooms</name>
             <type>Selector</type>
             <xpath>normalize-space(.//i[@class='fa fa-bathroom'])</xpath>
-            <actions>
-                <action>changeToInteger</action>
-            </actions>
         </Attribute>
         </MasterAttributes>
 
@@ -84,6 +72,48 @@
     </MasterPage>
 
     <DetailsAttributes>
+        <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_title</name>
+                <type>Meta</type>
+            </Attribute>
+            <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_link</name>
+                <type>Meta</type>
+            </Attribute>
+			<Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>property_reference</name>
+            <type>Meta</type>
+        </Attribute>
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bedrooms</name>
+            <type>Meta</type>
+              <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
+
+		<Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>price</name>
+            <type>Meta</type>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToFloat</action>
+            </actions>
+        </Attribute>
+		<Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bathrooms</name>
+            <type>Meta</type>
+            <actions>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
 
         <Attribute>
             <defaultValue>-1</defaultValue>

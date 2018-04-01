@@ -1,7 +1,7 @@
 <websiteInformation>
 	<domain>gravity.com</domain>
 	<start_urls>
-		<url>http://www.gravity-re.com/rent?sf_select_property_type=res&amp;sf_select_listing=10&amp;community=6142&amp;sub_community=-1&amp;property=-1&amp;min_price=0&amp;max_price=-1&amp;min_sqft=0&amp;max_sqft=-1&amp;min_bedrooms=-1&amp;max_bedrooms=-1&amp;min_bathrooms=0&amp;max_bathrooms=-1&amp;orderby=4&amp;limit=10#</url>
+		<url>http://www.gravity-re.com/rent?sf_select_property_type=res&amp;sf_select_listing=10&amp;community=6142&amp;sub_community=-1&amp;property=-1&amp;min_price=0&amp;max_price=-1&amp;min_sqft=0&amp;max_sqft=-1&amp;min_bedrooms=-1&amp;max_bedrooms=-1&amp;min_bathrooms=0&amp;max_bathrooms=-1&amp;orderby=4&amp;limit=10</url>
 	</start_urls>
 	<FirstDate>25th Aug 2017</FirstDate>
 	<LastDate>28th May 2016</LastDate>
@@ -14,7 +14,6 @@
 	<DateAttribute>
 		<Name>posting_date</Name>
         <Place>No Place</Place>
-        <DateFunction>DayFirst</DateFunction>
 	</DateAttribute>
 	<MasterPage>
         <MasterAttributes>
@@ -45,10 +44,7 @@
             <name>bedrooms</name>
             <type>Selector</type>
             <xpath>normalize-space(//i[@class='fa fa-bed'])</xpath>
-          <actions>
-                <action>extractNumbersFromString</action>
-                <action>changeToFloat</action>
-            </actions>
+
         </Attribute>
 
 		<Attribute>
@@ -56,19 +52,13 @@
             <name>price</name>
             <type>Selector</type>
             <xpath>normalize-space(.//div[@class='pi-price pull-left price'])</xpath>
-            <actions>
-                <action>extractNumbersFromString</action>
-                <action>changeToFloat</action>
-            </actions>
+
         </Attribute>
 		<Attribute>
             <defaultValue>-1</defaultValue>
             <name>bathrooms</name>
             <type>Selector</type>
             <xpath>normalize-space(.//i[@class='fa fa-bathroom'])</xpath>
-            <actions>
-                <action>changeToInteger</action>
-            </actions>
         </Attribute>
         </MasterAttributes>
         <Containers>
@@ -83,6 +73,49 @@
         </NextPage>
     </MasterPage>
     <DetailsAttributes>
+
+        <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_title</name>
+                <type>Meta</type>
+            </Attribute>
+            <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_link</name>
+                <type>Meta</type>
+            </Attribute>
+			<Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>property_reference</name>
+            <type>Meta</type>
+        </Attribute>
+		  <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bedrooms</name>
+            <type>Meta</type>
+              <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
+
+		<Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>price</name>
+            <type>Meta</type>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToFloat</action>
+            </actions>
+        </Attribute>
+		<Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bathrooms</name>
+            <type>Meta</type>
+            <actions>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
 
         <Attribute>
             <defaultValue>-1</defaultValue>
@@ -184,6 +217,17 @@
             <type>Multiple</type>
             <xpath>.//div[@class='product-other-images']//@src</xpath>
         </Attribute>
-
+        <Attribute>
+            <name>payment_type</name>
+            <type>Selector</type>
+            <defaultValue>yearly</defaultValue>
+            <xpath>no xpath</xpath>
+        </Attribute>
+        <Attribute>
+            <name>furnished</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>no xpath</xpath>
+        </Attribute>
     </DetailsAttributes>
 </websiteInformation>
