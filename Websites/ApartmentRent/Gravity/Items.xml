@@ -215,7 +215,7 @@
             <name>ad_images</name>
             <defaultValue>NA</defaultValue>
             <type>Multiple</type>
-            <xpath>.//div[@class='product-other-images']//@src</xpath>
+            <xpath>.//div[@class='item ']//a/@href</xpath>
         </Attribute>
         <Attribute>
             <name>payment_type</name>
