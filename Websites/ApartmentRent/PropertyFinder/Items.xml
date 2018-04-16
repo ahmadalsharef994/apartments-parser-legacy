@@ -1,7 +1,7 @@
 <websiteInformation>
     <domain>propertyfinder.ae</domain>
     <start_urls>
-        <url>https://www.propertyfinder.ae/search?l=&amp;q=&amp;c=2&amp;t=&amp;rp=y&amp;pf=&amp;pt=&amp;bf=&amp;bt==&amp;at=&amp;fu=0&amp;kw=&amp;ob=nd</url>
+        <url>https://www.propertyfinder.ae/en/search?c=2&amp;ob=mr&amp;page=1&amp;rp=y</url>
     </start_urls>
     <FirstDate>25th Aug 2017</FirstDate>
    <LastDate>28th May 2016</LastDate>
@@ -22,15 +22,30 @@
             <Attribute>
                 <defaultValue>NA</defaultValue>
                 <name>ad_link</name>
-                <xpath>.//div[@class='property-content']/h2/a/@href</xpath>
+                <xpath>.//a/@href</xpath>
+            </Attribute>
+            <Attribute>
+            <name>type</name>
+            <type>Selector</type>
+            <xpath>normalize-space(.//p[@class='card_propertyamenity card_propertyamenity-propertytype'])</xpath>
+            <defaultValue>NA</defaultValue>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+            </Attribute>
+            <Attribute>
+            <name>ad_title</name>
+            <type>Selector</type>
+            <defaultValue>Not Found</defaultValue>
+            <xpath>normalize-space(string(.//h2[@class='card_title card_title-link']))</xpath>
             </Attribute>
         </MasterAttributes>
         <Containers>
-            <xpath>.//section[@id='serp']/ul/li[not(contains(@class,'agent-smart-ad-section'))]</xpath>
+            <xpath>.//div[@class='cardlist cardlist-property']/div[@class='cardlist_item']</xpath>
         </Containers>
         <NextPage>
-            <xpath>.//nav[@class='pagination hide-on-print']/ul/li[@class='next pull-right']/a/@href</xpath>
-            <prefix>https://www.propertyfinder.ae</prefix>
+            <xpath>.//a[@class='pagination_link pagination_link-next']/@href</xpath>
+            <prefix>https://www.propertyfinder.ae/search?</prefix>
         </NextPage>
         <LinkAttribute>
             <name>ad_link</name>
@@ -42,44 +57,30 @@
             <name>posting_date</name>
             <type>Selector</type>
             <defaultValue>NA</defaultValue>
-            <xpath>normalize-space(.//span[@class='last-date']/text())</xpath>
+            <xpath>normalize-space(.//div[@class='amenities_date'])</xpath>
+            <actions>
+                <action>getDatePropertyFinder</action>
+            </actions>
         </Attribute>
-        <Attribute>
-            <name>ad_title</name>
-            <type>Selector</type>
-            <defaultValue>Not Found</defaultValue>
-            <xpath>normalize-space(string(.//div[@class='primary']/h1))</xpath>
-        </Attribute>
-        <Attribute>
-            <name>ad_link</name>
-            <defaultValue>NA</defaultValue>
-            <type>Meta</type>
-        </Attribute>
+
+
         <Attribute>
             <name>price</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//div[@class='price ']/span[@class='val']/text())</xpath>
+            <xpath>normalize-space(.//span[@data-qs='selected-price-value'])</xpath>
             <defaultValue>-1</defaultValue>
             <actions>
                 <action>extractNumbersFromString</action>
                 <action>changeToFloat</action>
             </actions>
         </Attribute>
-        <Attribute>
-            <name>type</name>
-            <type>Selector</type>
-            <xpath>normalize-space(.//table[@class='fixed-table']//tr/th[normalize-space(.)='Type']/following-sibling::td[1]/text())</xpath>
-            <defaultValue>NA</defaultValue>
-            <actions>
-                <action>changeToSmallLetters</action>
-            </actions>
-        </Attribute>
+
         <Attribute>
             <defaultValue>NA</defaultValue>
             <name>property_reference</name>
             <type>Selector</type>
             <xpath>
-                normalize-space(.//table[@class='fixed-table']//tr/th[normalize-space(.)='Reference']/following-sibling::td[1]/text())
+                normalize-space(.//*[text()[contains(.,'Reference')]]/following-sibling::div)
             </xpath>
         </Attribute>
         <Attribute>
@@ -87,7 +88,7 @@
             <name>bedrooms</name>
             <type>Selector</type>
             <xpath>
-                normalize-space(.//table[@class='fixed-table']//tr/th[normalize-space(.)='Bedrooms']/following-sibling::td[1]/text())
+                normalize-space(.//div[@class='facts_container']//*[text()[contains(.,'Bedrooms')]]/following-sibling::div)
             </xpath>
             <actions>
                 <action>checkIfStudioBedroom</action>
@@ -99,7 +100,7 @@
             <name>bathrooms</name>
             <type>Selector</type>
             <xpath>
-                normalize-space(.//table[@class='fixed-table']//tr/th[normalize-space(.)='Bathrooms']/following-sibling::td[1]/text())
+                normalize-space(.//div[@class='facts_container']//*[text()[contains(.,'Bathrooms')]]/following-sibling::div)
             </xpath>
             <actions>
                 <action>changeToInteger</action>
@@ -109,7 +110,7 @@
             <defaultValue>NA</defaultValue>
             <name>area</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//nav[@id='breadcrumbs']/span[2]/a/text())</xpath>
+            <xpath>normalize-space(.//a[@class='breadcrumb_link'][position()=2]/text())</xpath>
             <actions>
                 <action>changeToSmallLetters</action>
             </actions>
@@ -119,9 +120,10 @@
             <name>size</name>
             <type>Selector</type>
             <xpath>
-                normalize-space(.//table[@class='fixed-table']//tr/th[normalize-space(.)='Area']/following-sibling::td[1]/text())
+                normalize-space(.//div[@class='facts_container']//*[text()[contains(.,'Area')]]/following-sibling::div)
             </xpath>
             <actions>
+                <action>extractNumbersFromString</action>
                 <action>changeToFloat</action>
             </actions>
         </Attribute>
@@ -129,27 +131,20 @@
             <defaultValue>NA</defaultValue>
             <name>phone</name>
             <type>Selector</type>
-            <xpath>normalize-space(//li[@class='phone']/a/@data-phone)</xpath>
+            <xpath>substring(substring-after(.//script[contains(.,'window.propertyfinder.settings.property')]/text(),'tel:'),1,13)</xpath>
         </Attribute>
         <Attribute>
             <defaultValue>NA</defaultValue>
             <name>ad_images</name>
             <type>Multiple</type>
-            <xpath>.//nav[@class='hide-on-print']/div/div/span/img/@src</xpath>
+            <xpath>.//img[@class='gallery_img']/@src</xpath>
         </Attribute>
-        <Attribute>
-            <defaultValue>NA</defaultValue>
-            <name>trade_name</name>
-            <type>Selector</type>
-            <xpath>
-                normalize-space(.//div[@class='broker']/div[@class='name']/div[normalize-space(.)='Company:']/following-sibling::div[1]/strong/text())
-            </xpath>
-        </Attribute>
+
         <Attribute>
             <defaultValue>NA</defaultValue>
             <name>city</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//nav[@id='breadcrumbs']/span[1]/a/text())</xpath>
+            <xpath>normalize-space(.//a[@class='breadcrumb_link'][position()=1]/text())</xpath>
             <actions>
                 <action>cleanCity</action>
             </actions>
@@ -158,7 +153,7 @@
             <defaultValue>NA</defaultValue>
             <name>building</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//nav[@id='breadcrumbs']/span[last()]/a/text())</xpath>
+            <xpath>.//a[@class='breadcrumb_link'][last()]/text()</xpath>
             <actions>
                 <action>changeToSmallLetters</action>
             </actions>
@@ -176,7 +171,7 @@
             <defaultValue>NA</defaultValue>
             <name>payment_type</name>
             <type>Selector</type>
-            <xpath>normalize-space(.//div[@class='price']/span[@class='period']/text())</xpath>
+            <xpath>normalize-space(.//span[@data-qs='selected-price-period'])</xpath>
             <actions>
                 <action>changeToSmallLetters</action>
             </actions>
@@ -185,31 +180,31 @@
             <name>longitude</name>
             <defaultValue>NA</defaultValue>
             <type>Selector</type>
-            <xpath>.//div[@class='map']/@data-lng</xpath>
+            <xpath>substring-before(substring-after(.//script[contains(.,'window.propertyfinder.settings.property')]/text(),'lon: '),',')</xpath>
         </Attribute>
         <Attribute>
             <name>latitude</name>
             <defaultValue>NA</defaultValue>
             <type>Selector</type>
-            <xpath>.//div[@class='map']/@data-lat</xpath>
+            <xpath>substring-before(substring-after(.//script[contains(.,'window.propertyfinder.settings.property')]/text(),'lat: '),',')</xpath>
         </Attribute>
         <Attribute>
             <name>amenities</name>
             <defaultValue>NA</defaultValue>
             <type>Selector</type>
-            <xpath>normalize-space(string(.//section[@id='property-amenities']/h3/following-sibling::ul))</xpath>
+            <xpath>normalize-space(string(.//div[@class='amenities_list']))</xpath>
         </Attribute>
         <Attribute>
             <name>description</name>
             <type>Selector</type>
             <defaultValue>NA</defaultValue>
-            <xpath>normalize-space(string(.//section[@id='page-content']))</xpath>
+            <xpath>$x("normalize-space(string(.//div[@data-qs='text-trimmer']))")</xpath>
         </Attribute>
         <Attribute>
 			<name>furnished</name>
 			<type>Selector</type>
 			<defaultValue>NA</defaultValue>
-			<xpath>normalize-space(.//table[@class='fixed-table']//tr/th[normalize-space(.)='Furnishings']/following-sibling::td[1]/text())</xpath>
+			<xpath>normalize-space(..//*[text()[contains(.,'Furnishings')]]/following-sibling::div)</xpath>
 		</Attribute>
     </DetailsAttributes>
 </websiteInformation>
