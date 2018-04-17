@@ -1,7 +1,7 @@
 <websiteInformation>
     <domain>propertyfinder.ae</domain>
     <start_urls>
-        <url>https://www.propertyfinder.ae/en/search?c=2&amp;ob=mr&amp;page=1&amp;rp=y</url>
+        <url>https://www.propertyfinder.ae/en/search?amp%3Bbt=%3D&amp;3Bc=2&amp;3Bfu=0&amp;3Bob=nd&amp;3Brp=y&amp;c=1&amp;ob=mr</url>
     </start_urls>
     <FirstDate>25th Aug 2017</FirstDate>
    <LastDate>28th May 2016</LastDate>
@@ -29,9 +29,7 @@
             <type>Selector</type>
             <xpath>normalize-space(.//p[@class='card_propertyamenity card_propertyamenity-propertytype'])</xpath>
             <defaultValue>NA</defaultValue>
-            <actions>
-                <action>changeToSmallLetters</action>
-            </actions>
+
             </Attribute>
             <Attribute>
             <name>ad_title</name>
@@ -53,6 +51,24 @@
         </LinkAttribute>
     </MasterPage>
     <DetailsAttributes>
+         <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_title</name>
+                <type>Meta</type>
+        </Attribute>
+        <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_link</name>
+                <type>Meta</type>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>type</name>
+            <type>Meta</type>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
         <Attribute>
             <name>posting_date</name>
             <type>Selector</type>
@@ -103,6 +119,7 @@
                 normalize-space(.//div[@class='facts_container']//*[text()[contains(.,'Bathrooms')]]/following-sibling::div)
             </xpath>
             <actions>
+                <action>extractNumbersFromString</action>
                 <action>changeToInteger</action>
             </actions>
         </Attribute>
