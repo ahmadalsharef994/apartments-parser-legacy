@@ -1,16 +1,16 @@
 <websiteInformation>
     <domain>propertyfinder.ae</domain>
     <start_urls>
-        <url>https://www.propertyfinder.ae/en/search?amp%3Bbt=%3D&amp;3Bc=2&amp;3Bfu=0&amp;3Bob=nd&amp;3Brp=y&amp;c=1&amp;ob=mr</url>
+        <url>https://www.propertyfinder.ae/en/search?c=1&amp;ob=nd&amp;page=1</url>
     </start_urls>
-    <FirstDate>25th Aug 2017</FirstDate>
+    <FirstDate>25th Aug 2019</FirstDate>
    <LastDate>28th May 2016</LastDate>
     <Category>Apartment</Category>
     <Action>sale</Action>
-    <SpiderName>PropertyFinderApartmentsRent</SpiderName>
+    <SpiderName>PropertyFinderApartmentsSale</SpiderName>
     <Source>propertyfinder</Source>
     <TemplateAttributes>Websites/Templates/ApartmentsSale.xml</TemplateAttributes>
-    <LogFile>LogFiles/Apartment/Rent/apartments_sale_propertyfinder.log</LogFile>
+    <LogFile>LogFiles/Apartment/Sale/apartments_sale_propertyfinder.log</LogFile>
     <DateAttribute>
         <Place>DetailsPage</Place>
         <Name>posting_date</Name>
@@ -74,9 +74,7 @@
             <type>Selector</type>
             <defaultValue>NA</defaultValue>
             <xpath>normalize-space(.//div[@class='amenities_date'])</xpath>
-            <actions>
-                <action>getDatePropertyFinder</action>
-            </actions>
+
         </Attribute>
 
 

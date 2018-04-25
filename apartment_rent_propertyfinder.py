@@ -21,5 +21,5 @@ def setup_crawler(domain):
     crawler.crawl(domain)
     #crawler.start()
 
-setup_crawler('Websites//ApartmentRent//PropertyFinder//Items1.xml')
+setup_crawler('Websites//ApartmentRent//PropertyFinder//Items.xml')
 reactor.run()

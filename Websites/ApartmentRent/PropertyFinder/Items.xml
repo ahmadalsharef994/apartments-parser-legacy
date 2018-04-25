@@ -1,9 +1,9 @@
 <websiteInformation>
     <domain>propertyfinder.ae</domain>
     <start_urls>
-        <url>https://www.propertyfinder.ae/en/search?c=2&amp;ob=mr&amp;page=1&amp;rp=y</url>
+        <url>https://www.propertyfinder.ae/en/search?c=2&amp;ob=nd&amp;page=1&amp;rp=y</url>
     </start_urls>
-    <FirstDate>25th Aug 2017</FirstDate>
+    <FirstDate>25th Aug 2019</FirstDate>
    <LastDate>28th May 2016</LastDate>
     <Category>Apartment</Category>
     <Action>rent</Action>
@@ -74,9 +74,6 @@
             <type>Selector</type>
             <defaultValue>NA</defaultValue>
             <xpath>normalize-space(.//div[@class='amenities_date'])</xpath>
-            <actions>
-                <action>getDatePropertyFinder</action>
-            </actions>
         </Attribute>
 
 
@@ -222,6 +219,9 @@
 			<type>Selector</type>
 			<defaultValue>NA</defaultValue>
 			<xpath>normalize-space(..//*[text()[contains(.,'Furnishings')]]/following-sibling::div)</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
 		</Attribute>
     </DetailsAttributes>
 </websiteInformation>
