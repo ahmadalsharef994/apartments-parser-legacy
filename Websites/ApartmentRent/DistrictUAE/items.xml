@@ -1,0 +1,254 @@
+<websiteInformation>
+    <domain>www.districtuae.com</domain>
+    <start_urls>
+        <url>http://www.districtuae.com/properties.html?page=1&amp;emirate=Any+Emirate&amp;location=&amp;sublocation=&amp;property_type=&amp;beds=&amp;baths=&amp;type_rent=1&amp;price-from=&amp;price-to=&amp;sort_by=price&amp;order_by=asc</url>
+    </start_urls>
+    <FirstDate>25th Apr 2020</FirstDate>
+    <LastDate>28th May 2016</LastDate>
+    <Category>Apartment</Category>
+    <Action>rent</Action>
+    <SpiderName>apartments_rent_districtuae</SpiderName>
+    <Source>DistrictUAE</Source>
+    <TemplateAttributes>Websites/Templates/ApartmentsRent.xml</TemplateAttributes>
+    <LogFile>LogFiles/Apartment/Rent/apartments_rent_bayut.log</LogFile>
+    <DateAttribute>
+        <Place>No Place</Place>
+        <Name>posting_date</Name>
+    </DateAttribute>
+    <MasterPage>
+        <MasterAttributes>
+            <Attribute>
+            <name>ad_title</name>
+            <defaultValue>NA</defaultValue>
+            <type>Selector</type>
+            <xpath>normalize-space(//*[@id="main"]//h2/a)</xpath>
+        </Attribute>
+            <Attribute>
+                <defaultValue>NA</defaultValue>
+                <name>ad_link</name>
+                <xpath>.//div[@class="body span6"]//a/@href</xpath>
+            </Attribute>
+            <Attribute>
+            <name>area</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>substring-before(.//div[@class="body span6"]//div[@class="location"],",")</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+            </Attribute>
+            <Attribute>
+            <name>building</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>substring-after(.//div[@class="body span6"]//div[@class="location"],",")</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+            </Attribute>
+            <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bathrooms</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//div[@class="body span6"]//div[@class="bathrooms"]/div))</xpath>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
+            <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>bedrooms</name>
+            <type>Selector</type>
+            <xpath>floor(normalize-space(.//div[@class="body span6"]//div[@class="bedrooms"]/div))</xpath>
+            <actions>
+                <action>checkIfStudioBedroom</action>
+                <action>changeToInteger</action>
+            </actions>
+        </Attribute>
+            <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>size</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//div[@class="body span6"]//span[@class="value"]))</xpath>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToFloat</action>
+            </actions>
+            </Attribute>
+            <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>price</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//div[@class="body span6"]//div[@class="price"]))</xpath>
+            <actions>
+                <action>extractNumbersFromString</action>
+                <action>changeToFloat</action>
+            </actions>
+            </Attribute>
+
+        </MasterAttributes>
+        <Containers>
+            <xpath>//div[@class="span9"]</xpath>
+        </Containers>
+        <NextPage>
+            <xpath>string(//li/a[@href="javascript:"][contains(text(),"Next")]/@rel)</xpath>
+            <prefix>http://districtuae.com/properties.html?page=</prefix>
+            <suffix>&amp;emirate=Any+Emirate&amp;location=&amp;sublocation=&amp;property_type=&amp;beds=&amp;baths=&amp;type_rent=1&amp;price-from=&amp;price-to=&amp;sort_by=price&amp;order_by=asc</suffix>
+        </NextPage>
+        <LinkAttribute>
+            <name>ad_link</name>
+        </LinkAttribute>
+    </MasterPage>
+    <DetailsAttributes>
+        <Attribute>
+            <name>ad_title</name>
+            <defaultValue>NA</defaultValue>
+            <type>Meta</type>
+        </Attribute>
+        <Attribute>
+            <name>ad_link</name>
+            <type>Meta</type>
+            <defaultValue>NA</defaultValue>
+        </Attribute>
+        <Attribute>
+            <name>bathrooms</name>
+            <defaultValue>NA</defaultValue>
+            <type>Meta</type>
+        </Attribute>
+        <Attribute>
+            <name>bedrooms</name>
+            <type>Meta</type>
+            <defaultValue>NA</defaultValue>
+        </Attribute>
+        <Attribute>
+            <name>price</name>
+            <defaultValue>NA</defaultValue>
+            <type>Meta</type>
+        </Attribute>
+        <Attribute>
+            <name>size</name>
+            <type>Meta</type>
+            <defaultValue>NA</defaultValue>
+        </Attribute>
+        <Attribute>
+            <name>area</name>
+            <type>Meta</type>
+            <defaultValue>NA</defaultValue>
+        </Attribute>
+        <Attribute>
+            <name>building</name>
+            <type>Meta</type>
+            <defaultValue>NA</defaultValue>
+        </Attribute>
+
+
+
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>amenities</name>
+            <type>Selector</type>
+            <xpath>.//div[@class="row"]/ul/li/text()</xpath>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>property_reference</name>
+            <type>Selector</type>
+            <xpath>normalize-space(.//tr/*[text()[contains(.,"Ref:")]]/following-sibling::td)</xpath>
+        </Attribute>
+
+
+
+        <Attribute>
+            <defaultValue>-1</defaultValue>
+            <name>price_sqft</name>
+            <type>Selector</type>
+            <xpath>no xpath</xpath>
+        </Attribute>
+
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>type</name>
+            <type>Selector</type>
+            <xpath>normalize-space(string(.//tr/*[text()[contains(.,"Type")]]/following-sibling::td))</xpath>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>trade_name</name>
+            <type>Selector</type>
+            <xpath>substring-before(substring-after(.//*[@id="main"]//div[@class="property-detail"],"name:"),"Office phone no:")</xpath>
+        </Attribute>
+        <Attribute>
+            <defaultValue>NA</defaultValue>
+            <name>phone</name>
+            <type>Selector</type>
+            <xpath>substring-before(substring-after(.//*[@id="main"]//div[@class="property-detail"],"Office phone no:"),"Company Profile:")'</xpath>
+        </Attribute>
+        <Attribute>
+            <name>country</name>
+            <defaultValue>UAE</defaultValue>
+            <type>Selector</type>
+            <xpath>This website does not have value for the country. Bashar suggested to use the default value as UAE always</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>city</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>normalize-space(string(.//li[@aria-label='Property detail location']/span[@aria-label='Value']))</xpath>
+            <actions>
+                <action>extractBayutCity</action>
+                <action>cleanCity</action>
+            </actions>
+        </Attribute>
+
+
+        <Attribute>
+            <name>payment_type</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>.//tr/*[text()[contains(.,"Frequency")]]/following-sibling::td/text()</xpath>
+            <actions>
+                <action>changeToSmallLetters</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>ad_images</name>
+            <type>Multiple</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>.//*[@id="slider"]//img/@src</xpath>
+        </Attribute>
+        <Attribute>
+            <name>longitude</name>
+            <defaultValue>NA</defaultValue>
+            <type>Selector</type>
+            <xpath>.//meta[@itemprop='image']/following-sibling::script/text()</xpath>
+            <actions>
+                <action>extractBayutLongitude</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+            <name>latitude</name>
+            <defaultValue>NA</defaultValue>
+            <type>Selector</type>
+            <xpath>.//meta[@itemprop='image']/following-sibling::script/text()</xpath>
+            <actions>
+                <action>extractBayutLatitude</action>
+            </actions>
+        </Attribute>
+        <Attribute>
+			<name>description</name>
+			<type>Selector</type>
+			<defaultValue>NA</defaultValue>
+			<xpath>substring-after(substring-before(.//div[@class="property-detail"],"General amenities"),"Ft")</xpath>
+		</Attribute>
+        <Attribute>
+            <name>furnished</name>
+            <type>Selector</type>
+            <defaultValue>NA</defaultValue>
+            <xpath>no xpath</xpath>
+        </Attribute>
+    </DetailsAttributes>
+</websiteInformation>
