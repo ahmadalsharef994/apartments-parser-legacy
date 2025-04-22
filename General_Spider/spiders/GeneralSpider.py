@@ -23,7 +23,7 @@ import logging
 #import MySQLdb
 import time
 import datetime
-from scrapy.xlib.pydispatch import dispatcher
+from pydispatch import dispatcher
 from scrapy import signals
 
 class GeneralSpider(Spider):
@@ -142,7 +142,7 @@ class GeneralSpider(Spider):
                         meta[self.linkAttributeName] = self.attributesXMLParser.getPageLink(meta[self.linkAttributeName], sel)
                         yield Request(meta[self.linkAttributeName], meta = meta, callback = self.parseDetailsPage)
             elif self.dateAttributePlace=="No Place":
-                print "the number of item is {0}".format(len(self.containers))
+                print("the number of item is {0}".format(len(self.containers)))
                 for container in self.containers:
                     containerSelector = sel.xpath(container)
                     for oneAd in containerSelector:
@@ -208,14 +208,14 @@ class GeneralSpider(Spider):
 
     def spider_error(self, failure, response, spider):
         errorMessage = "Error on {0}, traceback: {1}".format(response.url, failure.getTraceback())
-        print errorMessage
+        print(errorMessage)
         from time import gmtime, strftime
         EmailComponent.sendEmail(errorMessage, "Error {0}".format(strftime("%Y-%m-%d %H:%M:%S", gmtime())))
 
     def spider_closed(self, spider):
-        print('The number of master pages in the spider {1} are {0}'.format(self.masterPagesNumbers, self.attributesXMLFilePath))
-        print('The number of details pages in the spider {1} are {0}'.format(self.detailsPagesNumbers, self.attributesXMLFilePath))
-        print('The spider {0} with xml {2} finished working on {1}'.format(self.name, str(datetime.datetime.now()), self.attributesXMLFilePath))
+        print(('The number of master pages in the spider {1} are {0}'.format(self.masterPagesNumbers, self.attributesXMLFilePath)))
+        print(('The number of details pages in the spider {1} are {0}'.format(self.detailsPagesNumbers, self.attributesXMLFilePath)))
+        print(('The spider {0} with xml {2} finished working on {1}'.format(self.name, str(datetime.datetime.now()), self.attributesXMLFilePath)))
         '''
         try:
             self.conn = MySQLdb.connect(user='william', passwd='Password@01', db='scrapy', host='localhost', charset="utf8", use_unicode=True)

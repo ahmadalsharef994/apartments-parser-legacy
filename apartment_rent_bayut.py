@@ -6,8 +6,8 @@ from scrapy.utils.project import get_project_settings
 from scrapy.settings import Settings
 
 def setup_crawler(domain):
-    spider = GeneralSpider(attributesXMLFilePath=domain)
-    settings = get_project_settings()
+    # spider = GeneralSpider(attributesXMLFilePath=domain)
+    settings = get_project_settings() #loads default scrapy settings
     Settings.set(settings, 'JOBDIR', "SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty")
     Settings.set(settings, 'LOG_FILE', "LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log")
     Settings.set(settings, 'LOG_ENABLED', "TRUE")

@@ -1,8 +1,8 @@
 from twisted.internet import reactor
 from scrapy.crawler import Crawler
 from scrapy import signals
-from scrapy import log
-from scrapy import log, signals
+import logging
+from scrapy import signals
 from General_Spider.spiders.GeneralSpider import GeneralSpider
 from scrapy.utils.project import get_project_settings
 import os

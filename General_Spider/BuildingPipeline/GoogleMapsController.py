@@ -1,7 +1,7 @@
 import  googlemaps
 import json
-from models import GMDocumentModel
-from Constants import Constants
+from General_Spider.BuildingPipeline.models import GMDocumentModel
+from General_Spider.BuildingPipeline.Constants import Constants
 class google_map(object):
     def __init__(self):
         "google map api  extract longitude and latitude"

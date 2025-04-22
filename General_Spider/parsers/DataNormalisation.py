@@ -63,7 +63,7 @@ class LoadJsonObject(object):
             self.jsonObject = json.load(json_file)
 
     def getMasterValue(self,value):
-        for key in self.jsonObject.keys():
+        for key in list(self.jsonObject.keys()):
             for area in self.jsonObject[key]:
                 if area == value:
                     return key

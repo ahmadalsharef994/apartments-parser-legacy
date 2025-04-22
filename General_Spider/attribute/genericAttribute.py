@@ -2,8 +2,7 @@
 #to have a dynamic extracting attributes
 from abc import ABCMeta, abstractmethod
 
-class GenericAttribute(object):
-    __metaclass__=ABCMeta
+class GenericAttribute(object, metaclass=ABCMeta):
     @abstractmethod
     def getResult(self, sel, response, flexibleItem):#sel is the xpath container, response is the dom of the page
         pass 

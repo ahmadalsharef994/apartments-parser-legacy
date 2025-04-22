@@ -1,4 +1,4 @@
-from __builtin__ import staticmethod
+from builtins import staticmethod
 
 from dateutil.parser import *
 import re
@@ -84,15 +84,15 @@ class Actions():
                 return oneValue.split(':')[1]
     @staticmethod
     def getCordinatesFromAddress(value):
-        import urllib2
-        return urllib2.urlopen("https://maps.googleapis.com/maps/api/geocode/json?address={0}&key=AIzaSyCQ6D6PCyOzoit9qadoJln4WHbInirtfJs".format(value)).read()
+        import urllib.request, urllib.error, urllib.parse
+        return urllib.request.urlopen("https://maps.googleapis.com/maps/api/geocode/json?address={0}&key=AIzaSyCQ6D6PCyOzoit9qadoJln4WHbInirtfJs".format(value)).read()
     @staticmethod
     def getDatePropertyFinder(value):
         if value.strip() == "":
             value = str(datetime.date.today().strftime("%Y-%m-%d"))
-            print ("The date was empty and now it is {0}".format(value))
+            print(("The date was empty and now it is {0}".format(value)))
             return value
-        print("value inside = {0}".format(value))
+        print(("value inside = {0}".format(value)))
         value = re.search('Last update: \s*(.*)',value).group(1)
         return value
     @staticmethod
@@ -171,9 +171,9 @@ class Actions():
         return value.lower()
     @staticmethod
     def CorrectLink(value):
-        import urlparse
-        url = urlparse.urlparse(value).geturl()
-        fp = urlparse.urljoin(url, urlparse.urlparse(url).path)
+        import urllib.parse
+        url = urllib.parse.urlparse(value).geturl()
+        fp = urllib.parse.urljoin(url, urllib.parse.urlparse(url).path)
         return fp
     @staticmethod
     def removeNonASCII(value):
@@ -223,9 +223,9 @@ class Actions():
 
     @staticmethod
     def CorrectLinkYzerProperty(value):
-        import urlparse
-        url = urlparse.urlparse(value).geturl()
-        fp = urlparse.urljoin(url, urlparse.urlparse(url).path)
+        import urllib.parse
+        url = urllib.parse.urlparse(value).geturl()
+        fp = urllib.parse.urljoin(url, urllib.parse.urlparse(url).path)
         fp  = ''.join([i if ord(i) < 128 else '' for i in fp])
         return fp
 
@@ -267,7 +267,7 @@ class Actions():
     @staticmethod
     def extractBayutLongitude(value):
         long = value.split('longitude')[1].split('reference_id')[0]
-        return re.search('(\d+(?:[.]\d*)*)', long).group(1)
+        return re.search('(\d+(?:[.]\d*)*)', int).group(1)
 
 
     @staticmethod

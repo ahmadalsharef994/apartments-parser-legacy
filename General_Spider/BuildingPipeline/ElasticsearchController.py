@@ -1,9 +1,10 @@
 from elasticsearch import Elasticsearch
-from Constants import Constants
+from General_Spider.BuildingPipeline.Constants import Constants
 import datetime
 import json
 import uuid
 from General_Spider.configurations import *
+
 class ElasticsearchController(object):
      def __init__(self):
          self.es = Elasticsearch([elasticSerachServerIP], port=elasticSearchServerPort, http_auth=(elasticSearchUsername, elasticSearchPassword))#68.168.100.142
@@ -94,9 +95,6 @@ class ADIndexController(ElasticsearchController):
         self.es.index(index = self.indexName, doc_type = self.documentType, body = body, id = ID) #propertywebsites7, propertyrent, propertywebsitestest
         return rawAd
 
-
-
-
 class ACIndexController(ElasticsearchController): #autoComplete index controller
     def __init__(self):
         super(ACIndexController, self).__init__()
@@ -118,9 +116,5 @@ class ACIndexController(ElasticsearchController): #autoComplete index controller
             self.es.index(index=self.indexName, doc_type=self.documentType, body=body,
                       id=ID)  # propertywebsites7, propertyrent, propertywebsitestest
         except Exception as ee:
-            print "Errorrrrrrrr on {0}".format(str(ee))
+            print("Errorrrrrrrr on {0}".format(str(ee)))
         return rawAd
-
-
-
-     

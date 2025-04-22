@@ -1,6 +1,6 @@
 import os
 import re
-from urlparse import urlparse
+from urllib.parse import urlparse
 from scrapy.dupefilters import RFPDupeFilter
 from scrapy.utils.request import request_fingerprint
 import logging

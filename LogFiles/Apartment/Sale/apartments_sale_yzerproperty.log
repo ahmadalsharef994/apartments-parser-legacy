@@ -1,0 +1,967 @@
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:08:05.876655
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:08:05.876655
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: fd4af60ca4bbe5e6
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:08:27.842483
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:08:27.845478
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: 0fa73843203793f8
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:09:46.431854
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:09:46.447374
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: f61b96aa8dd2f4df
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:10:34.839066
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:10:34.854907
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: 862637f8a04fd0e6
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:12:14.585829
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:12:14.585829
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: db1f2cb4b64fdab0
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:15:20.135324
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:15:20.135324
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: 135d02c7587e6518
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:15:27.580783
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:15:27.580783
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: 297924d2170a3fc8
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:22:44.772222
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 12:22:44.772222
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: f2b7eba1a56e76ae
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:02:32.693587
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:02:32.709193
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: cbc997aa8efbb2cc
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:03:42.686475
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:03:42.689464
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: 37ec811867dbdfd9
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:03:56.048934
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:03:56.048934
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: e0b9e07e4a035a73
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:04:27.660666
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:04:27.677612
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: eb9c3ed5ddf4effc
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:05:05.570364
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:05:05.585989
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: 49b3691aa9877d4b
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['General_Spider.pipelines.Yzerproperty',
+ 'General_Spider.pipelines.ActionsPipeline',
+ 'General_Spider.pipelines.DubizzlePipeline',
+ 'General_Spider.pipelines.DataNormalisation',
+ 'General_Spider.defaultAttributesPipeline.defaultAttributesPipeline',
+ 'General_Spider.MasterDataPipeline.MasterDataPipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+ERROR:scrapy.core.scraper:Spider error processing <GET https://www.kitsapcountrynursery.com/> (referer: None)
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 97, in parse
+    nextPage = self.attributesXMLParser.getNextPage(sel, response.url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\parsers\attributesXMLParser.py", line 40, in getNextPage
+    nextPage = sel.xpath(str(self.getValueOfTag('MasterPage/NextPage/xpath'))).extract()[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ERROR:scrapy.utils.signal:Error caught on signal handler: <bound method GeneralSpider.spider_error of <GeneralSpider 'apartments_sale_yzerproperty' at 0x22ab2aef3d0>>
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 97, in parse
+    nextPage = self.attributesXMLParser.getNextPage(sel, response.url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\parsers\attributesXMLParser.py", line 40, in getNextPage
+    nextPage = sel.xpath(str(self.getValueOfTag('MasterPage/NextPage/xpath'))).extract()[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\signal.py", line 46, in send_catch_log
+    response = robustApply(
+               ^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 213, in spider_error
+    EmailComponent.sendEmail(errorMessage, "Error {0}".format(strftime("%Y-%m-%d %H:%M:%S", gmtime())))
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\email\EmailComponent.py", line 47, in sendEmail
+    messageRow = {'raw': base64.urlsafe_b64encode(message.as_string())}
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ahmad\AppData\Local\Programs\Python\Python311\Lib\base64.py", line 119, in urlsafe_b64encode
+    return b64encode(s).translate(_urlsafe_encode_translation)
+           ^^^^^^^^^^^^
+  File "C:\Users\Ahmad\AppData\Local\Programs\Python\Python311\Lib\base64.py", line 58, in b64encode
+    encoded = binascii.b2a_base64(s, newline=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 2149,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 17385,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 4,
+ 'downloader/response_status_count/302': 1,
+ 'elapsed_time_seconds': 5.518694,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 10, 6, 10, 5, 11, 345727, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 49903,
+ 'httpcompression/response_count': 1,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/disk': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/disk': 6,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2024, 10, 6, 10, 5, 5, 827033, tzinfo=datetime.timezone.utc)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:06:00.357607
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:06:00.357607
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: b5113604a86d168e
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['General_Spider.pipelines.Yzerproperty',
+ 'General_Spider.pipelines.ActionsPipeline',
+ 'General_Spider.pipelines.DubizzlePipeline',
+ 'General_Spider.pipelines.DataNormalisation',
+ 'General_Spider.defaultAttributesPipeline.defaultAttributesPipeline',
+ 'General_Spider.MasterDataPipeline.MasterDataPipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+ERROR:scrapy.core.scraper:Spider error processing <GET https://www.kitsapcountrynursery.com/> (referer: None)
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 97, in parse
+    nextPage = self.attributesXMLParser.getNextPage(sel, response.url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\parsers\attributesXMLParser.py", line 40, in getNextPage
+    nextPage = sel.xpath(str(self.getValueOfTag('MasterPage/NextPage/xpath'))).extract()[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ERROR:scrapy.utils.signal:Error caught on signal handler: <bound method GeneralSpider.spider_error of <GeneralSpider 'apartments_sale_yzerproperty' at 0x181b8f1f690>>
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 97, in parse
+    nextPage = self.attributesXMLParser.getNextPage(sel, response.url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\parsers\attributesXMLParser.py", line 40, in getNextPage
+    nextPage = sel.xpath(str(self.getValueOfTag('MasterPage/NextPage/xpath'))).extract()[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\signal.py", line 46, in send_catch_log
+    response = robustApply(
+               ^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 213, in spider_error
+    EmailComponent.sendEmail(errorMessage, "Error {0}".format(strftime("%Y-%m-%d %H:%M:%S", gmtime())))
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\email\EmailComponent.py", line 47, in sendEmail
+    messageRow = {'raw': base64.urlsafe_b64encode(message.as_string())}
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ahmad\AppData\Local\Programs\Python\Python311\Lib\base64.py", line 119, in urlsafe_b64encode
+    return b64encode(s).translate(_urlsafe_encode_translation)
+           ^^^^^^^^^^^^
+  File "C:\Users\Ahmad\AppData\Local\Programs\Python\Python311\Lib\base64.py", line 58, in b64encode
+    encoded = binascii.b2a_base64(s, newline=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 2149,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 17367,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 4,
+ 'downloader/response_status_count/302': 1,
+ 'elapsed_time_seconds': 5.85816,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 10, 6, 10, 6, 6, 436331, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 49903,
+ 'httpcompression/response_count': 1,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/disk': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/disk': 6,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2024, 10, 6, 10, 6, 0, 578171, tzinfo=datetime.timezone.utc)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:08:18.589116
+INFO:apartments_sale_yzerproperty:The spider apartments_sale_yzerproperty with xml file = Websites//ApartmentSale//Yzerproperty//Items.xml starts working on 2024-10-06 13:08:18.589116
+INFO:scrapy.addons:Enabled addons:
+[]
+INFO:scrapy.extensions.telnet:Telnet Password: ba6be3ef6e42e30e
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'General_Spider',
+ 'DOWNLOAD_DELAY': 1,
+ 'DUPEFILTER_CLASS': 'General_Spider.CustomFilter.CustomFilter',
+ 'JOBDIR': 'SeenFolders/Apartment/Sale/seen_apartment_sale_yzeproperty',
+ 'LOG_ENABLED': 'TRUE',
+ 'LOG_FILE': 'LogFiles/Apartment/Sale/apartments_sale_yzeproperty.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'General_Spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['General_Spider.spiders']}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'General_Spider.middlewares.CustomProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['General_Spider.pipelines.Yzerproperty',
+ 'General_Spider.pipelines.ActionsPipeline',
+ 'General_Spider.pipelines.DubizzlePipeline',
+ 'General_Spider.pipelines.DataNormalisation',
+ 'General_Spider.defaultAttributesPipeline.defaultAttributesPipeline',
+ 'General_Spider.MasterDataPipeline.MasterDataPipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+ERROR:scrapy.core.scraper:Spider error processing <GET https://www.kitsapcountrynursery.com/> (referer: None)
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 97, in parse
+    nextPage = self.attributesXMLParser.getNextPage(sel, response.url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\parsers\attributesXMLParser.py", line 40, in getNextPage
+    nextPage = sel.xpath(str(self.getValueOfTag('MasterPage/NextPage/xpath'))).extract()[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ERROR:scrapy.utils.signal:Error caught on signal handler: <bound method GeneralSpider.spider_error of <GeneralSpider 'apartments_sale_yzerproperty' at 0x1e7a9d8f850>>
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\defer.py", line 279, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\python.py", line 350, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\core\spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 97, in parse
+    nextPage = self.attributesXMLParser.getNextPage(sel, response.url)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\parsers\attributesXMLParser.py", line 40, in getNextPage
+    nextPage = sel.xpath(str(self.getValueOfTag('MasterPage/NextPage/xpath'))).extract()[0]
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\scrapy\utils\signal.py", line 46, in send_catch_log
+    response = robustApply(
+               ^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\spiders_env\Lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\spiders\GeneralSpider.py", line 213, in spider_error
+    EmailComponent.sendEmail(errorMessage, "Error {0}".format(strftime("%Y-%m-%d %H:%M:%S", gmtime())))
+  File "E:\Dell Old\Old Jobs\Spiders\apartments_general_spider_mai\General_Spider\email\EmailComponent.py", line 47, in sendEmail
+    messageRow = {'raw': base64.urlsafe_b64encode(message.as_string())}
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ahmad\AppData\Local\Programs\Python\Python311\Lib\base64.py", line 119, in urlsafe_b64encode
+    return b64encode(s).translate(_urlsafe_encode_translation)
+           ^^^^^^^^^^^^
+  File "C:\Users\Ahmad\AppData\Local\Programs\Python\Python311\Lib\base64.py", line 58, in b64encode
+    encoded = binascii.b2a_base64(s, newline=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 2149,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 17361,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 4,
+ 'downloader/response_status_count/302': 1,
+ 'elapsed_time_seconds': 6.705959,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 10, 6, 10, 8, 25, 513829, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 49903,
+ 'httpcompression/response_count': 1,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/disk': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/disk': 6,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2024, 10, 6, 10, 8, 18, 807870, tzinfo=datetime.timezone.utc)}
+INFO:scrapy.core.engine:Spider closed (finished)

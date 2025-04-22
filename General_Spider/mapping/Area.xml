@@ -1,0 +1,199 @@
+<locations>
+    <location name="dubai land">
+        <alias>dubailand</alias>
+        <alias>dubai land</alias>
+    </location>
+    <location name="palm jumeirah">
+        <alias>the palm jumeirah</alias>
+        <alias>signature villas</alias>
+        <alias>palm jumeirah</alias>
+    </location>
+    <location name="jumeirah lake towers">
+        <alias>jlt jumeirah lake towers</alias>
+        <alias>jumeirah lake towers (jlt)</alias>
+        <alias>jumeirah lake towers</alias>
+        <alias>jlt</alias>
+        <alias>jlt1</alias>
+        <alias>jumeirah lake towers jlt</alias>
+        <alias>jumeirah lake towers</alias>
+    </location>
+    <location name="jumeirah village circle">
+        <alias>jumeirah village circle (jvc)</alias>
+        <alias>jvc</alias>
+        <alias>jumeirah village circle</alias>
+    </location>
+    <location name="jumeirah beach residence">
+        <alias>jbr jumeirah beach residence</alias>
+        <alias>jumeirah beach residence (jbr)</alias>
+        <alias>jbr</alias>
+        <alias>jumeirah beach residence jbr</alias>
+        <alias>jumeirah beach residence</alias>
+    </location>
+    <location name="international media production zone">
+        <alias>impz international media production zone</alias>
+        <alias>impz</alias>
+        <alias>international media production zone</alias>
+    </location>
+    <location name="dubai international financial centre">
+        <alias>dubai international financial centre</alias>
+        <alias>difc</alias>
+    </location>
+    <location name="umm suqeim">
+        <alias>umm suqeim</alias>
+        <alias>umm suqueim</alias>
+    </location>
+    <location name="downtown dubai">
+        <alias>burj khalifa area</alias>
+        <alias>burj khalifa</alias>
+        <alias>downtown dubai</alias>
+    </location>
+    <location name="dubai sports city">
+        <alias>sports city</alias>
+        <alias>sport city</alias>
+        <alias>dubai sports city</alias>
+    </location>
+    <location name="dubai silicon oasis">
+        <alias>dubai silicon oasis</alias>
+        <alias>silicon oasis</alias>
+    </location>
+    <location name="barsha heights (tecom)">
+        <alias>barsha heights (tecom)</alias>
+        <alias>tecom</alias>
+    </location>
+    <location name="akoya oxygen">
+        <alias>akoya</alias>
+        <alias>damac hills (akoya by damac)</alias>
+        <alias>akoya by damac,akoya (damac hills)</alias>
+    </location>
+    <location name="old town">
+        <alias>the old town island</alias>
+        <alias>the old town</alias>
+        <alias>old town</alias>
+    </location>
+    <location name="jumeirah golf estates">
+        <alias>jumeirah golf estates</alias>
+        <alias>golf city</alias>
+    </location>
+    <location name="meydan city">
+        <alias>meydan city</alias>
+        <alias>meydan one</alias>
+    </location>
+    <location name="dubai south city">
+        <alias>dubai south city</alias>
+        <alias>emaar south</alias>
+        <alias>south city</alias>
+    </location>
+    <location name="the lagoons">
+        <alias>the lagoons</alias>
+        <alias>dubai lagoon</alias>
+    </location>
+    <location name="al garhoud">
+        <alias>garhoud</alias>
+        <alias>al garhoud</alias>
+    </location>
+    <location name="al jaddaf">
+        <alias>jaddaf</alias>
+        <alias>al jaddaf</alias>
+    </location>
+    <location name="al satwa">
+        <alias>satwa</alias>
+        <alias>al satwa</alias>
+    </location>
+    <location name="al furjan">
+        <alias>furjan</alias>
+        <alias>al furjan</alias>
+    </location>
+    <location name="al mamzar">
+        <alias>al mamzar</alias>
+        <alias>mamzar</alias>
+    </location>
+    <location name="al safa">
+        <alias>al safa</alias>
+        <alias>safa</alias>
+    </location>
+    <location name="al awir">
+        <alias>al awir</alias>
+        <alias>awir</alias>
+    </location>
+    <location name="al bada'a">
+        <alias>al bada'a</alias>
+        <alias>al badaa</alias>
+    </location>
+    <location name="al jadaf">
+        <alias>al jadaf</alias>
+        <alias>jadaf</alias>
+    </location>
+    <location name="dubai studio city">
+        <alias>dubai studio city</alias>
+        <alias>studio city</alias>
+    </location>
+    <location name="alreef">
+        <alias>alreef</alias>
+        <alias>alreefdowntown</alias>
+        <alias>al reef villas</alias>
+    </location>
+    <location name="uptown motor city">
+        <alias>uptown motor city</alias>
+        <alias>up town motor city</alias>
+    </location>
+    <location name="dubai creek harbour">
+        <alias>dubai creek harbour</alias>
+        <alias>dubai harbour</alias>
+    </location>
+    <location name="dubai world trade centre">
+        <alias>dubai world trade centre</alias>
+        <alias>world trade centre</alias>
+        <alias>dubai world central</alias>
+        <alias>trade centre</alias>
+    </location>
+    <location name="mohammed bin rashid al maktoum city">
+        <alias>mohammed bin rashid al maktoum city</alias>
+        <alias>mohammad bin rashid city</alias>
+    </location>
+    <location name="corniche road">
+        <alias>corniche road</alias>
+        <alias>corniche</alias>
+    </location>
+    <location name="muroor area">
+        <alias>muroor area</alias>
+        <alias>muroor road</alias>
+        <alias>muroor street</alias>
+    </location>
+    <location name="yas island">
+        <alias>yas island</alias>
+        <alias>abu dhabi formula 1</alias>
+    </location>
+    <location name="hadbat al zafranah">
+        <alias>hadbat al zafranah</alias>
+        <alias>hadbat al zafrana</alias>
+    </location>
+    <location name="al ittihad">
+        <alias>al ittihad</alias>
+        <alias>al ittihad road</alias>
+    </location>
+    <location name="al zahiyah">
+        <alias>al zahiyah</alias>
+        <alias>al zahiya</alias>
+    </location>
+    <location name="al karamah">
+        <alias>al karamah</alias>
+        <alias>al karama</alias>
+    </location>
+    <location name="between two bridges">
+        <alias>between two bridges</alias>
+        <alias>bain al jessrain</alias>
+        <alias>between two bridges (bain al jessrain)</alias>
+    </location>
+    <location name="al maqtaa">
+        <alias>al maqtaa</alias>
+        <alias>al maqta</alias>
+    </location>
+    <location name="al wahda">
+        <alias>al wahda</alias>
+        <alias>al wahdah</alias>
+    </location>
+    <location name="al nahyan camp">
+        <alias>al nahyan camp</alias>
+        <alias>al nahyan</alias>
+    </location>
+</locations>

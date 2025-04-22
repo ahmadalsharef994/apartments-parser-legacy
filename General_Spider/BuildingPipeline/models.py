@@ -1,4 +1,4 @@
-from Constants import Constants
+from .Constants import Constants
 class ADDocumentModel(object):
     def clean(self, value):
         value = value.lower()

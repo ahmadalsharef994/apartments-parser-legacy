@@ -1,0 +1,3 @@
+Deleted .batchfiles having windows batch to run spiders
+Delete .ida which is for PyCharm
+rm -rf spiders_env/ removed old environment,

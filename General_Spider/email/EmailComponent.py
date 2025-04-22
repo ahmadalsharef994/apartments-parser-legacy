@@ -1,4 +1,4 @@
-from quickstart import *
+from .quickstart import *
 import base64
 from email.mime.audio import MIMEAudio
 from email.mime.base import MIMEBase
@@ -55,10 +55,10 @@ class EmailComponent:
             service = discovery.build('gmail', 'v1', http=http)
 
             message = (service.users().messages().send(userId=user_id, body=message).execute())
-            print 'Message Id: %s' % message['id']
+            print('Message Id: %s' % message['id'])
             #return message
-        except errors.HttpError, error:
-            print 'An error occurred: %s' % error
+        except errors.HttpError as error:
+            print('An error occurred: %s' % error)
 
 
 #EmailComponent.sendEmail("No Totti no party, we invite you to watch a game", "Francesco Totti")

@@ -4,8 +4,9 @@ SPIDER_MODULES = ['General_Spider.spiders']
 NEWSPIDER_MODULE = 'General_Spider.spiders'
 DUPEFILTER_CLASS = 'General_Spider.CustomFilter.CustomFilter'
 FEED_EXPORTERS = {
- 'jsonlines': 'scrapy.contrib.exporter.JsonLinesItemExporter',
+    'jsonlines': 'scrapy.exporters.JsonLinesItemExporter',
 }
+
 FEED_FORMAT = 'jsonlines'
 ITEM_PIPELINES = {
     'General_Spider.defaultAttributesPipeline.defaultAttributesPipeline':800,
@@ -19,7 +20,11 @@ ITEM_PIPELINES = {
     # 'General_Spider.pipelines.AddCombinedField': 703,
 }
 DOWNLOADER_MIDDLEWARES = {
-    'General_Spider.middlewares.CustomProxyMiddleware':199,
+    'General_Spider.middlewares.CustomProxyMiddleware': 199,
     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 200
 }
+
 DOWNLOAD_DELAY = 1
+
+
+REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"

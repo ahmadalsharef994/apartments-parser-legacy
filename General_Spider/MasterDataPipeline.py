@@ -6,6 +6,7 @@ from General_Spider.BuildingPipeline.ElasticsearchController import ADIndexContr
 from General_Spider.BuildingPipeline.ElasticsearchController import ACIndexController
 from General_Spider.BuildingPipeline.ElasticsearchController import MasterDataIndexController
 from General_Spider.BuildingPipeline.GoogleMapsController import GoogleMapsController
+
 class MasterDataPipeline(object):
      def process_item(self, item, spider):
          adModel = ADDocumentModel(item)
